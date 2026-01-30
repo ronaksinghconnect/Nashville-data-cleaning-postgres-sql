@@ -1,5 +1,10 @@
 # SQL Data Cleaning Project – Nashville Housing Dataset (PostgreSQL)
 
+## Dataset Context:
+The dataset contains residential property transaction records from Nashville, Tennessee.
+It includes sale dates, prices, parcel identifiers, addresses, and property attributes.
+The data required extensive cleaning due to missing values, inconsistent formats, and duplicate records.
+
 ## Overview
 This project demonstrates a complete **SQL-based data cleaning workflow** using PostgreSQL on a real-world housing dataset.  
 All cleaning operations are performed directly on the working table to produce an **analysis-ready dataset**, while the original raw data is backed up and preserved for safety.
@@ -63,11 +68,12 @@ The final dataset is clean, consistent, and ready for analysis.
 - Data validation before destructive operations
 
 ---
-
 ## Tools
 - PostgreSQL  
 - pgAdmin  
 - SQL  
+## Data Source: (Public Nashville housing records, made available via Kaggle for educational and analytical use.)
+
 
 ---
 
