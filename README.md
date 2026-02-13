@@ -3,6 +3,43 @@
 
 ## Overview
 This project documents the complete data cleaning process performed on the `public.nashville_housing` table using PostgreSQL.
+Improved data quality and reliability of a real estate sales dataset by cleaning, standardizing, and de-duplicating records in PostgreSQL, enabling accurate reporting and downstream analytics.
+## Company & Dataset Context
+
+This dataset represents residential property sales transactions from the Nashville housing market, commonly used by real estate analytics teams to monitor market trends, pricing behavior, and sales performance.  
+The data captures property-level details such as sale date, sale price, legal reference, parcel identifiers, and property addresses, supporting location-based and time-based analysis.  
+In a real-world business setting, this type of dataset is used by real estate firms, market research teams, and BI analysts to build sales reports, dashboards, and market performance insights.
+## Business Problem
+
+Real estate analytics teams rely on housing transaction data to analyze sales trends, pricing behavior, and market performance. However, the raw Nashville housing dataset contained multiple data quality issues that made it unreliable for reporting and analysis, including inconsistent date formats, missing property addresses, duplicate records, and inconsistent categorical values.
+
+These issues lead to:
+- Incorrect time-based analysis due to inconsistent sale date formats  
+- Incomplete location-based insights due to missing property addresses  
+- Inflated metrics and biased analysis caused by duplicate records  
+- Inconsistent reporting in dashboards due to mixed categorical values (Y/N vs Yes/No)
+
+As a result, analysts and stakeholders could not confidently use the dataset for decision-making, trend analysis, or dashboarding.
+
+---
+
+## Business Impact
+
+This project converts a raw, error-prone real estate dataset into an analysis-ready table that can be safely used for:
+
+- Sales trend analysis over time  
+- City-level and street-level location analysis  
+- Accurate KPI reporting (total sales, average sale price, transaction volume)  
+- Feeding clean data into BI tools and dashboards (Tableau, Power BI)  
+- Reducing downstream data errors in reporting and analytics pipelines  
+
+By performing cleaning directly in PostgreSQL, this project mirrors real-world analytics workflows where data quality is enforced at the database level before consumption by reporting tools, increasing trust in insights and reducing manual correction work in dashboards.
+
+---
+
+## Key Outcome
+
+Improved the reliability and usability of a real estate sales dataset by cleaning, standardizing, and de-duplicating records in PostgreSQL, enabling accurate downstream analytics and dashboarding.
 
 Important notes:
 - The documented queries directly clean and modify the working table.
